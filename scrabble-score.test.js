@@ -6,6 +6,10 @@ import { test, expect } from "vitest";
 //     expect(calculateScrabbleScore('A')).toEqual(1);
 // });
 
+test('multiple letters', () => {
+    expect(calculateScrabbleScore('AS')).toEqual(2);
+});
+
 // repeat steps 1-3 for the remaining single letter words (i.e. B, C, D and so forth up to and including Z)
 test.each([
     ['A', 1],
