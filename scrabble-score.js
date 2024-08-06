@@ -33,7 +33,5 @@ export function calculateScrabbleScore(word) {
         const letter = word[i].toUpperCase();
         wordScore += letterValues[letter]; //SUM each val of each letter and return
     }
-    console.log(wordScore);
+    return wordScore;
 };
-
-calculateScrabbleScore('AS');
