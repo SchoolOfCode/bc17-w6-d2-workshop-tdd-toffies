@@ -6,8 +6,12 @@ import { test, expect } from "vitest";
 //     expect(calculateScrabbleScore('A')).toEqual(1);
 // });
 
-test('multiple letters', () => {
-    expect(calculateScrabbleScore('EAT')).toEqual(26);
+// test('multiple letters', () => {
+//     expect(calculateScrabbleScore('EAT')).toEqual(26);
+// });
+
+test('error numbers', () => {
+    expect(() => calculateScrabbleScore('9')).toThrowError('Only capital letters please!');
 });
 
 // repeat steps 1-3 for the remaining single letter words (i.e. B, C, D and so forth up to and including Z)
