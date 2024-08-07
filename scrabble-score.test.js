@@ -7,7 +7,7 @@ import { test, expect } from "vitest";
 // });
 
 test('multiple letters', () => {
-    expect(calculateScrabbleScore('AS')).toEqual(20);
+    expect(calculateScrabbleScore('EAT')).toEqual(26);
 });
 
 // repeat steps 1-3 for the remaining single letter words (i.e. B, C, D and so forth up to and including Z)

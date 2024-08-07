@@ -30,8 +30,8 @@ export function calculateScrabbleScore(word) {
     // loop through each letter of word,  
     let wordScore = 0;
     for (let i = 0; i < wordLength; i++) {
-        const letter = word[i].toUpperCase();
-        wordScore += letterValues[letter]; //SUM each val of each letter and return
+        const letter = word[i]
+        wordScore += letterValues[letter] //SUM each val of each letter and return
     }
     return wordScore;
 };
